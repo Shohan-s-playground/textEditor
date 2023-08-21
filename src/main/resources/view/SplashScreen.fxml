@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="rootSplash" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.SplashScreenController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="426.0" layoutX="90.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../png/photoshop-png-logo-3086.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

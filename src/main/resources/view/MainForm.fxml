@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="root1" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.MainFormController">
+   <children>
+      <MenuBar layoutY="14.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <ButtonBar layoutX="181.0" layoutY="75.0" prefHeight="40.0" prefWidth="200.0" />
+      <Button fx:id="btnNew" layoutY="41.0" mnemonicParsing="false" onAction="#btnNewOnAction" text="New" />
+      <Button fx:id="btnCut" layoutX="47.0" layoutY="41.0" mnemonicParsing="false" onAction="#btnCutOnAction" text="cut" />
+      <Button fx:id="btnUserGuide" layoutX="86.0" layoutY="41.0" mnemonicParsing="false" onAction="#btnUserGuideOnAction" text="Userguide" />
+      <Button fx:id="btnOpen" layoutY="63.0" mnemonicParsing="false" onAction="#btnOpenOnAction" text="Open" />
+      <Button fx:id="btnCopy" layoutX="47.0" layoutY="63.0" mnemonicParsing="false" onAction="#btnCopyOnAction" text="Copy" />
+      <Button fx:id="btnAboutUs" layoutX="97.0" layoutY="63.0" mnemonicParsing="false" onAction="#btnAboutUsOnAction" text="About Us" />
+      <Button fx:id="btnSave" layoutY="87.0" mnemonicParsing="false" onAction="#btnSaveOnAction" text="Save" />
+      <Button fx:id="btnPaste" layoutX="47.0" layoutY="87.0" mnemonicParsing="false" onAction="#btnPasteOnAction" text="Paste" />
+      <Button fx:id="btnSaveAs" layoutY="111.0" mnemonicParsing="false" onAction="#btnSaveAsOnAction" text="Save as" />
+      <Button fx:id="btnSelectAll" layoutX="67.0" layoutY="111.0" mnemonicParsing="false" onAction="#btnSelectAllOnAction" text="Select all" />
+      <Button fx:id="btnPrint" layoutX="-1.0" layoutY="135.0" mnemonicParsing="false" onAction="#btnPrintOnAction" text="Print" />
+      <Button fx:id="btnExit" layoutX="-6.0" layoutY="159.0" mnemonicParsing="false" onAction="#btnExitOnAction" text="Exit" />
+   </children>
+</AnchorPane>
