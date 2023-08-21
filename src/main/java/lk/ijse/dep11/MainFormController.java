@@ -50,7 +50,13 @@ public class MainFormController {
     public void btnCutOnAction(ActionEvent actionEvent) {
     }
 
-    public void btnUserGuideOnAction(ActionEvent actionEvent) {
+    public void btnUserGuideOnAction(ActionEvent actionEvent)throws IOException {
+        AnchorPane userguide=FXMLLoader.load(getClass().getResource("/view/UserGuide.fxml"));
+        Scene newScene=new Scene(userguide);
+        Stage primaryStage = (Stage) root1.getScene().getWindow();
+        primaryStage.setScene(newScene);
+        primaryStage.sizeToScene();
+        primaryStage.centerOnScreen();
     }
 
     public void btnOpenOnAction(ActionEvent actionEvent) {
@@ -59,7 +65,14 @@ public class MainFormController {
     public void btnCopyOnAction(ActionEvent actionEvent) {
     }
 
-    public void btnAboutUsOnAction(ActionEvent actionEvent) {
+    public void btnAboutUsOnAction(ActionEvent actionEvent) throws IOException{
+        AnchorPane aboutus=FXMLLoader.load(getClass().getResource("/view/AboutUs.fxml"));
+        Scene newScene=new Scene(aboutus);
+        Stage primaryStage = (Stage) root1.getScene().getWindow();
+        primaryStage.setScene(newScene);
+        primaryStage.sizeToScene();
+        primaryStage.centerOnScreen();
+
     }
 
     public void btnSaveOnAction(ActionEvent actionEvent) {
@@ -78,5 +91,6 @@ public class MainFormController {
     }
 
     public void btnExitOnAction(ActionEvent actionEvent) {
+        System.exit(0);
     }
 }
